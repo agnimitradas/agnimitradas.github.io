@@ -40,6 +40,10 @@ html {
   height: 100%;
 }
 
+.main-container > div {
+  height: calc(100vh - 50px);
+}
+
 .dark-theme-body {
   position: absolute;
   width: 100%;
@@ -54,7 +58,6 @@ html {
 /* INTRO CONTAINER */
 .intro-container {
   display: flex;
-  height: 95%;
   justify-content: center;
   flex-flow: row wrap-reverse;
   align-items: center;
@@ -148,18 +151,26 @@ html {
 
 /* SKILLS */
 .skills-container {
-  height: 95%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.skills-container:before {
-  content: "COMING SOON";
-  color: white;
-  font-size: 48px;
-  margin-right: 90px;
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 25px;
+  line-height: 40px;
+}
+
+.skills > span:before {
+  content: "\2713";
+  margin-right: 20px;
 }
 
 .coding {
@@ -170,6 +181,37 @@ html {
   height: 100%;
   width: 100%;
   z-index: 9999999;
+}
+
+/* Experience */
+.exp-container > span {
+  font-size: 35px;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.exp-container > .exp {
+  margin: 50px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-org {
+  display: flex;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: 80%;
+}
+.exp-org > img {
+  width: 150px;
+  height: 100px;
+  margin-right: 50px;
 }
 
 /* NAV BAR */
